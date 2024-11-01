@@ -4,7 +4,7 @@ export default function FactsGenerator() {
   return (
     <>
       <h2>Hello from app </h2>
-      <p>This is test</p>
+      <p>This is test . . .</p>
     </>
   );
 }
