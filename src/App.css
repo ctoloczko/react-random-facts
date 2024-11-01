@@ -1,12 +1,29 @@
+body {
+  background-color: #ffcbcb;
+}
+
 .app {
   text-align: center;
   margin: 50px auto;
   padding: 30px;
   max-width: 600px;
-  border-left: solid 2px #e81616;
-  border-right: solid 2px #e81616;
+  border-left: double 9px rgb(64, 112, 136, 0.5);
+  border-right: double 9px rgb(64, 112, 136, 0.5);
+  font-family: "Poiret One", sans-serif;
+  background-color: #ffcbcb;
+  color: rgb(19, 39, 67, 0.8);
 }
 
 h2 {
   font-size: 40px;
+  letter-spacing: 3px;
+}
+
+h4 {
+  letter-spacing: 3px;
+}
+
+footer {
+  margin-top: 50px;
+  border-top: solid 1px rgb(64, 112, 136, 0.5);
 }
