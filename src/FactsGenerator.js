@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { Hourglass } from "react-loader-spinner";
+import { MagnifyingGlass } from "react-loader-spinner";
 import axios from "axios";
+import Typewriter from "typewriter-effect";
+
 import "./App.css";
 
 export default function FactsGenerator() {
@@ -33,8 +36,32 @@ export default function FactsGenerator() {
             colors={["#306cce", "#72a1ed"]}
           />
         </div>
+      ) : fact ? (
+        <div className="Fact">
+          {" "}
+          <Typewriter
+            options={{
+              strings: [fact],
+              autoStart: true,
+              loop: false,
+              deleteSpeed: 0,
+              delay: "natural",
+            }}
+          />
+        </div>
       ) : (
-        <p className="Fact">{fact || "Waiting"}</p>
+        <div>
+          <MagnifyingGlass
+            visible={true}
+            height="80"
+            width="80"
+            ariaLabel="magnifying-glass-loading"
+            wrapperStyle={{}}
+            wrapperClass="magnifying-glass-wrapper"
+            glassColor="#c0efff"
+            color="#e15b64"
+          />
+        </div>
       )}
     </>
   );
