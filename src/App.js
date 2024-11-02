@@ -8,7 +8,7 @@ function App() {
         <FactsGenerator />
 
         <footer>
-          <p class="text-center text-muted">
+          <p className="text-center text-muted">
             🩶 This project was coded by Celina Toloczko-Mastalerz and is{" "}
             <a
               href="https://github.com/ctoloczko"
