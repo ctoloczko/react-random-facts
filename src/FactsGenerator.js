@@ -45,7 +45,7 @@ export default function FactsGenerator() {
               autoStart: true,
               loop: false,
               deleteSpeed: 0,
-              delay: "natural",
+              delay: 50,
             }}
           />
         </div>
